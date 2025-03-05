@@ -1,0 +1,276 @@
+// section,footer{
+//     display: none !important; 
+// }
+.general-info {
+    // display: block !important;
+    padding-top: 70px;
+    .container {
+        .general-info__wrapper {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1200px) {
+                flex-direction: column;
+                justify-content: center;
+                // align-items: center;
+            }
+            .general-info__left {
+                .general-info__left__top {
+                    @media (max-width: 500px) {
+                        display: none;
+                    }
+                    a {
+                        font-family: Segoe UI;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 26.6px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #b97f00;
+                        // @media (max-width: 1200px) {
+                        //     overflow-x: scroll;
+                        // }
+                        &:not(:first-child) {
+                            margin-left: 220px;
+                        }
+                    }
+                }
+                .general-info__left__main {
+                    margin-top: 17px;
+                    @media (max-width: 725px) {
+                        margin-top: 10px;
+                    }
+                    ul {
+                        .general-item {
+                            display: flex;
+                            padding: 9px 0 8px 0;
+                            width: 89%;
+                            @media (max-width: 725px) {
+                                flex-direction: column;
+                                width: 95%;
+                                padding: 0;
+                            }
+                            @media (max-width: 1024px) {
+                                &:nth-child(4) {
+                                    display: none;
+                                }
+                                &:nth-child(5) {
+                                    display: none;
+                                }
+                                &:nth-child(6) {
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(even) {
+                                background-color: #f7f3d0;
+                            }
+                            .general-item__date {
+                                display: flex;
+                                align-items: center;
+                                margin-left: 3px;
+                                img {
+
+                                }
+                                .general-item__date__text {
+                                    margin-left: 10px;
+                                    font-family: Segoe UI;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    text-underline-position: from-font;
+                                    text-decoration-skip-ink: none;
+                                    color: #C1C1C1;
+                                    
+                                }
+                            }
+                            .general-item__info {
+                                p {
+                                    margin-left: 30px;
+                                    font-family: Segoe UI;
+                                    font-size: 16px;
+                                    font-weight: 350;
+                                    // line-height: 8px;
+                                    text-align: left;
+                                    text-underline-position: from-font;
+                                    text-decoration-skip-ink: none;
+                                    color: #071F32;
+                                    @media (max-width: 725px) {
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .general-info__left__bottom {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 35px;
+                    .general-info__left__button {
+                        font-family: Segoe UI;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 18.62px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #075007;
+                        padding: 15px 120px 16px 120px;
+                        border: 1px solid #D1D1D1;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            background-color: #d8980f;
+                            color: white;
+                        }
+                        @media (max-width: 500px) {
+                            padding: 15px 0;
+                            width: 95%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .general-info__right {
+                @media (max-width: 1200px) {
+                    margin-top: 50px;
+                }
+                .general-info__right__top {
+                    .general-info__right__title {
+                        h2 {
+                            font-family: Segoe UI;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 26.6px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            position: relative;
+                            color: #075007;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 30px;
+                                width: 90px;
+                                height: 4px;
+                                background-color: #d8980f;
+                            }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 33px;
+                                height: 1px;
+                                width: 100%;
+                                background-color: #D1D1D1;
+                            }
+                        }
+                    }
+                    .general-info__right__main {
+                        .general-info__right__item {
+                            margin-top: 33px;
+                            ul {
+                                li {
+                                    padding: 11px 0;
+                                    &:not(:first-child) {
+                                        margin-top: 20px;
+                                    }
+                                    &:nth-child(odd) {
+                                        background-color: #f7f3d0;
+                                    }
+                                    a {
+                                        .info {
+                                            margin-right: 10px;
+                                            margin-left: 11px;
+                                        }
+                                        font-family: Segoe UI;
+                                        font-size: 16px;
+                                        font-weight: 350;
+                                        // line-height: 20px;
+                                        text-align: left;
+                                        text-underline-position: from-font;
+                                        text-decoration-skip-ink: none;
+                                        color: #071F32;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .general-info__right__bottom {
+                    margin-top: 30px;
+                    .general-info__right__title {
+                        h2 {
+                            font-family: Segoe UI;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 26.6px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #075007;
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 30px;
+                                width: 90px;
+                                height: 4px;
+                                background-color: #d8980f;
+                                // z-index: 5;
+                            }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                top: 33px;
+                                height: 1px;
+                                width: 100%;
+                                background-color: #D1D1D1;
+                            }
+                        }
+                    }
+                    .general-info__right__main {
+                        .general-info__right__wrapper {
+                            position: relative;
+                            margin-top: 33px;
+                            
+                            a {
+                                
+                                .general-info__right__item {
+                                    display: flex;
+                                    align-items: center;
+                                    &:not(:first-child) {
+                                        margin-top: 10px;
+                                    }
+                                    &:nth-child(odd) {
+                                        background-color: #f7f3d0;
+                                     }
+                                    
+                                    .info {
+                                        margin-left: 11px;
+                                    }
+                                    p {
+                                        font-family: Segoe UI;
+                                        font-size: 16px;
+                                        font-weight: 350;
+                                        line-height: 20px;
+                                        text-align: left;
+                                        text-underline-position: from-font;
+                                        text-decoration-skip-ink: none;
+                                        color: #071F32;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

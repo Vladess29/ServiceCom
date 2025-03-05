@@ -1,0 +1,226 @@
+// section,footer{
+//     display: none !important; 
+// }
+.link {
+    padding-top: 70px;
+    // display: block !important;
+    background-image: url(/img/backflag.png);
+    background-repeat: no-repeat;
+    background-position: left 230px;
+
+    .container {
+        width: 1396px;
+        @media (max-width: 1600px) {
+            width: 1200px;
+        }
+        @media (max-width: 1200px) {
+            width: 924px;
+        }
+        @media (max-width: 1024px) {
+            width: 670px;
+        }
+        @media (max-width: 670px) {
+            width: 100%;
+            padding: 0 50px;
+          }
+          @media (max-width: 500px) {
+            padding: 0 32px;
+          }
+          @media (max-width: 400px) {
+            padding: 0 24px;
+          }
+        .link-main__wrapper {
+            .link-title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 43px;
+                h2 {
+                    font-family: Segoe UI;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 31.92px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #d8980f;
+                }
+            }
+            .link-wrapper {
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: 1024px) {
+                    flex-direction: column;
+                }
+                .link-left {
+                    display: flex;
+                    flex-direction: column;
+                    // align-items: center;
+                    justify-content: center;
+                    .link-left__title {
+                        font-family: Segoe UI;
+                        font-size: 32px;
+                        font-weight: 900;
+                        line-height: 32px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #d8980f;
+                        width: 70%;
+                        @media (max-width: 500px) {
+                            width: 95%;
+                            font-weight: 900;
+                            font-size: 24px;
+
+                          }
+                    }
+                    ul {
+                        margin-top: 30px;
+                        li {
+                            .link-left__text {
+                                font-family: Segoe UI;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #075007;
+                            }
+                        }
+                    }
+                }
+                .link-right {
+                    @media (max-width: 1024px) {
+                        margin-top: 40px;
+                    }
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .input-wrapper {
+                            position: relative;
+                            &::after {
+                                    content: '';
+                                    right: 0;
+                                    top: 0;
+                                    width: 10px;
+                                    height: 100%;
+                                    background-color: #d8980f;
+                                    position: absolute;
+                                }
+                        .form-number {
+                            border: 1px solid #D1D1D1;
+                            padding: 30px 31px 30px 31px;
+                            position: relative;
+                            width: 100%;
+                            font-family: Segoe UI;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #888888;
+                            &::placeholder {
+                                font-family: Segoe UI;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #888888;
+                            }
+                        }
+                    }
+                    .input-wrapper {
+                        .form-messege {
+                            border: 1px solid #D1D1D1;
+                            padding: 30px 31px 152px 31px;
+                            resize: none;
+                            font-family: Segoe UI;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #888888;
+                            // margin-top: 10px;
+                            width: 100%;
+                            position: relative;
+                            outline: none;
+                            &::placeholder {
+                                font-family: Segoe UI;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #888888;
+                            }
+                            // &::after {
+                            //     content: '';
+                            //     right: 0;
+                            //     top: 0;
+                            //     width: 10px;
+                            //     height: 100%;
+                            //     background-color: #0F3788;
+                            //     position: absolute;
+                            // }
+                        }
+                    }
+                        .checkbox-container {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 11px;
+                            .form-checkbox {
+                                cursor: pointer;
+                                border: 1px solid #D1D1D1;
+                                width: 25px;
+                                height: 25px;
+                            }
+                            label {
+                                cursor: pointer;
+                                font-family: Segoe UI;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 15px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #888888;
+                                margin-left: 15px;
+                            }
+                        }
+                        .submit-button {
+                            font-family: Segoe UI;
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 18.62px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: white;
+                            background-color: #d8980f;
+                            border: none;
+                            padding-top: 20px;
+                            padding-bottom: 21px;
+                            // align-items: center;
+                            text-align: center;
+                            margin-top: 12px;
+                            // border: 0px solid #D1D1D1;
+                            transition: all .3s ease-in-out;
+
+                            &:hover {
+                                background-color: #ddac41;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

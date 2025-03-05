@@ -1,0 +1,102 @@
+// section,footer{
+//         display: none !important; 
+//     }
+.main-banner {
+    // display: block !important;
+    padding-top: 180px;
+    .container {
+        .main-banner__wrapper {
+            .main-banner__top {
+                padding-top: 76px;
+                padding-bottom: 88px;
+                background-image: url(/img/main/city-background.png);
+                .main-banner__left {
+                    .main-banner__title {
+                        font-family: Segoe UI;
+                        font-size: 36px;
+                        font-weight: 900;
+                        line-height: 44px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #b97f00;
+                        width: 70%;
+                        margin-left: 49px;
+                        @media (max-width: 500px) {
+                            width: 95%;
+                            margin-left: 20px;
+                        }
+                    }
+                    ul {
+                        li {
+                            .main-banner__list {
+                                font-family: Segoe UI;
+                                font-size: 24px;
+                                font-weight: 400;
+                                // line-height: 31.92px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #075007;
+                                position: relative;
+                                margin-top: 41px;
+                                margin-left: 70px;
+                                @media (max-width: 725px) {
+                                    line-height: 20px;
+                                    margin-top: 30px;
+                                }
+                                @media (max-width: 500px) {
+                                    margin-left: 41px;
+                                }
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    left: -20px;
+                                    top: 5px;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 25px;
+                                    background-color: #075007;
+                                }
+                            }
+                        }
+                    }
+                    .main-banner__text {
+                        font-family: Segoe UI;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #075007;
+                        margin-top: 35px;
+                        margin-left: 52px;
+                    }
+                }
+                .main-banner__right {
+                    background-image: url(/img/main/Photo.png);
+                    background-position: center;
+                }
+            }
+            .main-banner__footer {
+                background-color: #d8980f;
+                border-radius: 0px 0px 25px 25px;
+                padding: 14px 0 16px 0;
+                display: flex;
+                justify-content: center;
+                .main-banner__info {
+                    font-family: Segoe UI;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #ffffff;
+                    width: 92%;
+                }
+            }
+        }
+    }
+}

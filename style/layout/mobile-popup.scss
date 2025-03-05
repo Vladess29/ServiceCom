@@ -1,0 +1,215 @@
+.mobile-popup {
+    background-color: #d8980f;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    // background-color: white;
+    z-index: 10;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .container {
+        overflow-y: scroll;
+        .mobile-logo {
+            align-items: center;
+            margin-top: 20px;
+        }
+        .mobile-popup__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .mobile-popup_menu {
+                margin-top: 120px;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+                
+                li {
+                    &:not(:first-child) {
+                        margin-top: 20px;
+                    }
+                    a {
+                        font-family: Segoe UI;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 26.6px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: white;
+                    }
+                    .mobile-profile {
+                        img {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+            .mobile-popup__info {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 50px;
+                align-self: flex-start;
+
+                // margin-left: 50px;
+                li {
+                    &:not(:first-child) {
+                        margin-top: 25px;
+                    }
+                    .popup-info {
+                        img {
+                            margin-right: 6px;
+                        }
+                    }
+                    a {
+                        font-family: Segoe UI;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18.62px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: white;
+                    }
+                }
+            }
+            .mobile-accordion {
+                align-self: flex-start;
+                .mobile-accordion__item {
+                    &.active {
+                        .mobile-accordion__title {
+                            .accordion-arrow {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    .mobile-accordion__title {
+                        display: flex;
+                        // justify-content: flex-start;
+                        align-items: center;
+                        // margin-left: 20px;
+                        margin-top: 20px;
+                        
+
+                        .accordion-time {
+                            // margin-left: 20px;
+                        }
+                        .accordion-title {
+                            font-family: Segoe UI;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18.62px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: white;
+                            margin-left: 9px;
+                            margin-right: 15px;
+                        }
+                        .accordion-arrow {
+                            margin-right: 15px;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    .mobile-accordion__content {
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.5s ease-in-out;
+                        .accordion-list {
+                            .accordion-item {
+                                .accordion-maintitle {
+                                    font-family: Segoe UI;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    // line-height: 26.6px;
+                                    text-align: left;
+                                    text-underline-position: from-font;
+                                    text-decoration-skip-ink: none;
+                                    color: white;
+                                    position: relative;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        top: 25px;
+                                        background-color: white;
+                                        width: 60px;
+                                        height: 4px;
+                                    }
+                                }
+                                .accordion-title {
+                                    font-family: Segoe UI;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    // line-height: 19.95px;
+                                    text-align: left;
+                                    text-underline-position: from-font;
+                                    text-decoration-skip-ink: none;
+                                    color: white;
+                                }
+                                .accordion-text {
+                                    font-family: Segoe UI;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    // line-height: 19.95px;
+                                    text-align: left;
+                                    text-underline-position: from-font;
+                                    text-decoration-skip-ink: none;
+                                    color: #F24D4D;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mobile-popup__footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 65px;
+                // margin-left: 80px;
+                .mobile-popup__social {
+                    a {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+                .mobile-footer__info {
+                    
+                    p {
+                        font-family: Segoe UI;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #FFFFFF99;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// .item{
+//     &:nth-child(even) {
+    
+//     } 
+// }

@@ -1,0 +1,156 @@
+// section,footer{
+//         display: none !important; 
+//     }
+
+.footer {
+    background-color: #d8980f;
+    margin-top: 100px;
+    // display: block !important;
+    .container {
+        width: 1396px;
+        @media (max-width: 1600px) {
+            width: 1200px;
+        }
+        @media (max-width: 1200px) {
+            width: 924px;
+        }
+        @media (max-width: 1024px) {
+            width: 670px;
+        }
+        @media (max-width: 670px) {
+            width: 100%;
+            padding: 0 50px;
+          }
+          @media (max-width: 500px) {
+            padding: 0 32px;
+          }
+          @media (max-width: 400px) {
+            padding: 0 24px;
+          }
+        .footer-wrapper {
+            .footer-top__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 46px;
+                @media (max-width: 725px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .footer-top__left {
+                    a {
+                        .footer-logo {
+
+                        }
+                    }
+                }
+                .footer-top__mid {
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        @media (max-width: 1200px) {
+                            display: none;
+                        }
+                        .footer-map {
+
+                        }
+                        .footer-top__mid__text {
+                            font-family: Segoe UI;
+                            font-size: 14px;
+                            font-weight: 400;
+                            // line-height: 1px;
+                            text-align: center;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: white;
+                        }
+                    }
+                }
+                .footer-top__right {
+                    width: 40%;
+                    @media (max-width: 725px) {
+                            width: 60%;
+                    }
+                    @media (max-width: 500px) {
+                        width: 80%;
+                }
+                    .footer-top__right__text {
+                        font-family: Segoe UI;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18.62px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: white;
+                        
+                        a {
+                            font-family: Segoe UI;
+                            font-size: 14px;
+                            font-weight: 400;
+                            // line-height: 18.62px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: white;
+                            border-bottom: 1px solid white;
+                        }
+                    }
+                    @media (max-width: 725px) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .footer-bottom__wrapper {
+                margin-top: 23px;
+                padding-bottom: 20px;
+                .footer-bottom__menu {
+                    
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        @media (max-width: 1024px) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .footer-menu__item {
+                            font-family: Segoe UI;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #FFFFFF99;
+                            &:not(:first-child) {
+                                margin-left: 30px;
+                                @media (max-width: 1024px) {
+                                    margin-left: 0px;
+                                }
+                            }
+                            @media (max-width: 1200px) {
+                                &:nth-child(4) {
+                                    display: none;
+                                }
+                            }
+                            a {
+                                font-family: Segoe UI;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: #FFFFFF99;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 

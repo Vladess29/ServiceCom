@@ -1,0 +1,65 @@
+.public-info {
+    padding-top: 180px;
+    .container {
+        .public-info__wrapper {
+            .public-info__title {
+                font-family: Segoe UI;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 31.92px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #d8980f;
+                margin-top: 55px;
+                padding-bottom: 50px;
+            }
+            ul {
+                .public-info__item {
+                    display: flex;
+                    padding: 10px;
+                    &:nth-child(even) {
+                        background-color: #f7f3d0;
+                    }
+                    @media (max-width: 725px) {
+                        flex-direction: column;
+                    }
+                    .public-info__item__date {
+                        display: flex;
+                        align-items: center;
+                        img {
+
+                        }
+                        p {
+                            font-family: Segoe UI;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            text-align: center;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #C1C1C1;
+                            margin-left: 10px;
+                        }
+                    }
+                    .public-info__item__main {
+                        p {
+                            font-family: Segoe UI;
+                            font-size: 16px;
+                            font-weight: 350;
+                            line-height: 20px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: #071F32;
+                            margin-left: 48px;
+                            @media (max-width: 725px) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

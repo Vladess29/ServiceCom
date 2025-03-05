@@ -1,0 +1,11 @@
+.act-info .container .act-info__wrapper .act-info__top a {
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #071F32;
+}
